@@ -8,7 +8,7 @@
 /* Design général */
 body {
     font-family: 'Poppins', sans-serif;
-    background: #f0f0f0;
+    background-color: #f0f0f0;
     height: 100vh;
     width: 100%;
     overflow: hidden auto;
@@ -16,8 +16,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 0;
-    padding: 0;
+    background: linear-gradient(120deg, #f0f0f0 0%, #e0e0e0 100%);
 }
 
 /* Navigation */
@@ -25,11 +24,12 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 1rem;
     margin-bottom: 5rem;
     width: 100%;
-    background: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(10px);
+    
 }
 
 .nav h1 {
@@ -44,22 +44,36 @@ body {
 }
 
 .nav ul li {
-    margin-left: 6%;
+    margin-left: 30px;
 }
 
 .nav ul li a {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
     text-decoration: none;
-    font-size: 1.2rem;
-    color: #007bff;
-    transition: color 0.3s;
+}
+
+.nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    background: #007bff;
+    transition: width 0.4s;
+    left: 0;
+    bottom: 0;
+}
+
+.nav ul li a:hover::after {
+    width: 100%;
 }
 
 .nav ul li a:hover {
     color: #0056b3;
 }
-section {
-    width: 100%;
-}
+
 /* Section des continents */
 .continents {
     height: 80%;
@@ -68,28 +82,27 @@ section {
     justify-content: center;
     align-items: center;
     grid-template-columns: repeat(3, 1fr); /* 3 colonnes */
-    gap: 2rem;
+    gap: 2rem; /* Espace entre les éléments */
     justify-items: center;
+    
 }
 
 .continent {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     overflow: hidden;
-    border-radius: .5em; /* Bords légèrement arrondis */
-    width: 15rem; /* Proportions carrées/rectangulaires équilibrées */
-    height: 10rem; /* Hauteur réduite pour un aspect plus carré */
+    border-radius: 0.5em; /* Bords légèrement arrondis */
+    width: 20rem; /* Dimensions plus grandes */
+    height: 13rem; /* Ajustement de la hauteur */
     transition: transform 0.5s ease;
     position: relative;
     cursor: pointer;
     text-align: center;
+    transition: transform 0.4s cubic-bezier(0.42, 0, 0.58, 1), box-shadow 0.4s;
 }
 
 .continent img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
     transition: transform 0.5s ease;
 }
 
@@ -110,12 +123,12 @@ section {
 }
 
 .overlay h2 {
-    font-size: 2rem; /* Ajustement de la taille pour les nouvelles dimensions */
-    margin-bottom: 5%;
+    font-size: 2.5rem; /* Taille de texte plus grande */
+    margin-bottom: 5px;
 }
 
 .overlay p {
-    font-size: 1.1rem;
+    font-size: 1.3rem; /* Texte plus grand pour la description */
     width: 80%;
     text-align: center;
 }
@@ -129,20 +142,130 @@ section {
 }
 
 .continent:hover {
-    transform: translateY(-10%); /* Effet de levée sur hover */
+    transform: translateY(-10px); /* Effet de levée sur hover */
 }
 
-/* Pour un effet fluide de transition */
+/* Transition fluide */
 .continent {
     transition: transform 0.4s cubic-bezier(0.42, 0, 0.58, 1);
 }
 
-/* -------- Styles pour les appareils mobiles -------- */
-@media screen and (max-width:  1195px) {
-    .overlay {
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
         opacity: 1;
     }
-    .nav h1 {
-        font-size: 100%;
+}
+
+/* Introduction Section */
+.introduction {
+    text-align: center;
+    padding: 2rem;
+    background-color: #e6f7ff;
+    margin-bottom: 3rem;
+}
+
+.introduction h2 {
+    font-size: 2.5rem;
+    color: #0056b3;
+}
+
+.introduction p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 1rem;
+    line-height: 1.6;
+}
+
+/* Fun Facts Section */
+.fun-facts {
+    background-color: #f0f8ff;
+    padding: 2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.fun-facts h2 {
+    font-size: 2.5rem;
+    color: #007bff;
+}
+
+.fun-facts .fact {
+    margin-top: 2rem;
+    font-size: 1.3rem;
+    color: #333;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #fff;
+    padding: 2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    color: #007bff;
+}
+
+.contact form {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact form input, .contact form textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact form button:hover {
+    background-color: #0056b3;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 2rem;
+    background-color: #e9f7ef;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 2.5rem;
+    color: #28a745;
+}
+
+.testimonials .testimonial {
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 2rem;
+    padding: 1rem;
+    border-left: 3px solid #28a745;
+    background-color: #fff;
+    display: inline-block;
+}
+
+/* Media query pour les écrans plus petits (mobile) */
+@media only screen and (max-width: 1196px) {
+    .continents {
+        grid-template-columns: 1fr; /* 1 colonne pour mobile (vertical) */
+        gap: 1.5rem; /* Espace réduit entre les éléments */
     }
 }

@@ -269,7 +269,4 @@ body {
         gap: 1.5rem; /* Espace réduit entre les éléments */
     }
 }
-  .continent {
-        width: 90%; /* Augmente la largeur pour mobile */
-    }
-}
+

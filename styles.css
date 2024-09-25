@@ -277,6 +277,9 @@ body {
         .overlay {
             opacity: 1; /* L'overlay est toujours visible sur mobile */
             transition: none; /* Retire l'effet de transition sur mobile */
+            bottom: 10%; /* Remonte un peu le texte pour qu'il ne soit pas caché */
+            padding: 0.5rem; /* Réduit légèrement l'espacement pour plus de visibilité */
+            font-size: 0.9rem; /* Réduit la taille de la police pour qu'elle s'adapte mieux */
         }
     }
 }

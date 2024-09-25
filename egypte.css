@@ -1,0 +1,120 @@
+/* Style global */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Fond gris clair */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* En-tête */
+header {
+    background: #ffffff; /* En-tête blanc */
+    color: #333;
+    padding: 30px 0; /* Augmenter le padding pour plus d'espace */
+    text-align: center;
+    border-bottom: 2px solid #0077cc; /* Ligne de séparation plus épaisse */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.8rem; /* Taille de police plus grande */
+    font-weight: bold; /* Gras */
+    letter-spacing: 1px; /* Espacement des lettres */
+}
+
+/* Conteneur principal */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 30px; /* Augmenter le padding */
+    background: #ffffff; /* Conteneur blanc */
+    border-radius: 12px; /* Coins arrondis plus prononcés */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Ombre plus marquée */
+}
+
+/* Sections */
+h2 {
+    color: #0077cc; /* Couleur des titres */
+    border-bottom: 3px solid #0077cc; /* Ligne de séparation sous les titres */
+    padding-bottom: 10px;
+    margin-top: 40px; /* Plus d'espace au-dessus des titres */
+    font-size: 2rem; /* Taille de police pour les titres */
+}
+
+h3 {
+    margin-top: 30px; /* Plus d'espace au-dessus des sous-titres */
+    color: #555; /* Couleur des sous-titres plus douce */
+    font-size: 1.5rem; /* Taille de police des sous-titres */
+}
+
+/* Images */
+.main-image {
+    width: 100%;
+    height: auto; /* Laisse l'image s'ajuster à sa proportion */
+    object-fit: contain; /* Ajuste l'image pour qu'elle soit complètement visible */
+    margin-bottom: 30px; /* Augmenter la marge inférieure */
+}
+
+.main-image:hover {
+    transform: scale(1.02); /* Zoom léger au survol */
+}
+
+.empire-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 15px 0; /* Marge autour des images des empires */
+    transition: transform 0.3s; /* Transition pour un effet au survol */
+}
+
+.empire-image:hover {
+    transform: scale(1.02); /* Zoom léger au survol */
+}
+
+/* Références */
+.references {
+    margin-top: 40px;
+    padding: 15px; /* Augmenter le padding */
+    background: #f9f9f9; /* Fond légèrement gris pour les références */
+    border-left: 5px solid #0077cc; /* Ligne à gauche */
+}
+
+/* Ajout d'un style pour rendre le contenu scrollable */
+section {
+    margin-bottom: 50px; /* Plus d'espace entre les sections */
+}
+
+/* Liste sans puces */
+ul {
+    list-style-type: none; /* Suppression des puces */
+    padding: 0; /* Suppression du remplissage */
+}
+
+/* Style des liens */
+a {
+    color: #0077cc; /* Couleur des liens */
+    text-decoration: none; /* Pas de soulignement */
+    transition: color 0.3s; /* Transition pour un effet au survol */
+}
+
+a:hover {
+    color: #005999; /* Couleur des liens au survol */
+    text-decoration: underline; /* Soulignement au survol */
+}
+
+.main-image, .empire-image {
+    width: 100%; /* Ajuste la largeur à 100% du conteneur */
+    max-width: 250px; /* Limite la largeur maximale */
+    height: auto; /* Conserve le ratio d'aspect */
+    object-fit: contain; /* Contient l'image sans la déformer */
+}
+
+.container {
+    max-width: 1200px; /* Définit une largeur maximum pour le conteneur principal */
+    margin: 0 auto; /* Centre le conteneur sur la page */
+    padding: 10px; /* Ajoute de l'espace autour du contenu */
+}
+

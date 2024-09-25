@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History of African Countries</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+        }
+
+        .nav {
+            
+            color: #000000;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .nav h1 {
+            margin: 0;
+        }
+
+        .nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        .countries {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        .country {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .country img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .country:hover {
+            transform: scale(1.05);
+        }
+
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .country:hover .overlay {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .overlay h2 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+
+        .overlay p {
+            margin: 0.5rem 0 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation moderne sans header -->
+    <div class="nav">
+        <h1>History of African Countries</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Section avec des pays africains -->
+    <section class="countries">
+        <div class="country" data-country="Égypte">
+            <a href="egypte.html">
+                <img src="images/egypte.png" alt="Égypte">
+                <div class="overlay">
+                    <h2>Égypte</h2>
+                    <p>Découvrez les pharaons et l'histoire ancienne de l'Égypte.</p>
+                </div>
+            </a>
+        </div>
+        <div class="country" data-country="Nigeria">
+            <a href="nigeria.html">
+                <img src="images/nigeria.png" alt="Nigeria">
+                <div class="overlay">
+                    <h2>Nigeria</h2>
+                    <p>Explorez les cultures diversifiées et l'histoire du Nigeria.</p>
+                </div>
+            </a>
+        </div>
+        <div class="country" data-country="Afrique du Sud">
+            <a href="afrique_du_sud.html">
+                <img src="images/afrique_du_sud.png" alt="Afrique du Sud">
+                <div class="overlay">
+                    <h2>Afrique du Sud</h2>
+                    <p>Plongez dans l'histoire de la lutte pour la liberté en Afrique du Sud.</p>
+                </div>
+            </a>
+        </div>
+        <div class="country" data-country="Kenya">
+            <a href="kenya.html">
+                <img src="images/kenya.png" alt="Kenya">
+                <div class="overlay">
+                    <h2>Kenya</h2>
+                    <p>Découvrez la riche histoire et la faune du Kenya.</p>
+                </div>
+            </a>
+        </div>
+        <div class="country" data-country="Éthiopie">
+            <a href="ethiopie.html">
+                <img src="images/ethiopie.png" alt="Éthiopie">
+                <div class="overlay">
+                    <h2>Éthiopie</h2>
+                    <p>Explorez l'histoire ancienne et la culture de l'Éthiopie.</p>
+                </div>
+            </a>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -8,7 +8,7 @@
 /* Design général */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f0f0f0;
+    background: #f0f0f0;
     height: 100vh;
     width: 100%;
     overflow: hidden auto;
@@ -16,6 +16,8 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin: 0;
+    padding: 0;
 }
 
 /* Navigation */
@@ -23,10 +25,10 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    padding: 1rem 2rem;
     margin-bottom: 5rem;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(10px);
 }
 
@@ -42,7 +44,7 @@ body {
 }
 
 .nav ul li {
-    margin-left: 30px;
+    margin-left: 6%;
 }
 
 .nav ul li a {
@@ -55,7 +57,9 @@ body {
 .nav ul li a:hover {
     color: #0056b3;
 }
-
+section {
+    width: 100%;
+}
 /* Section des continents */
 .continents {
     height: 80%;
@@ -68,6 +72,10 @@ body {
 }
 
 .continent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     overflow: hidden;
     border-radius: .5em; /* Bords légèrement arrondis */
     width: 15rem; /* Proportions carrées/rectangulaires équilibrées */
@@ -80,8 +88,7 @@ body {
 
 .continent img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
     transition: transform 0.5s ease;
 }
 
@@ -103,7 +110,7 @@ body {
 
 .overlay h2 {
     font-size: 2rem; /* Ajustement de la taille pour les nouvelles dimensions */
-    margin-bottom: 5px;
+    margin-bottom: 5%;
 }
 
 .overlay p {
@@ -121,7 +128,7 @@ body {
 }
 
 .continent:hover {
-    transform: translateY(-10px); /* Effet de levée sur hover */
+    transform: translateY(-10%); /* Effet de levée sur hover */
 }
 
 /* Pour un effet fluide de transition */
@@ -130,53 +137,11 @@ body {
 }
 
 /* -------- Styles pour les appareils mobiles -------- */
-@media (max-width: 768px) {
-    /* Réorganise les continents en colonne */
-    .continents {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 2rem;
-    }
-
-    /* Affiche le nom au-dessus de l'image */
-    .continent {
-        width: 90%; /* Plus large pour les mobiles */
-        height: auto;
-    }
-
-    .continent img {
-        height: auto;
-    }
-
+@media screen and (max-width:  1195px) {
     .overlay {
-        position: relative;
-        opacity: 1; /* Toujours visible sur mobile */
-        background: none; /* Supprime le fond pour laisser l'image visible */
-        color: #333; /* Couleur du texte */
-    }
-
-    .overlay h2 {
-        position: relative;
-        margin-bottom: 1rem;
-        font-size: 1.5rem;
-    }
-
-    .overlay p {
-        font-size: 1rem;
-        color: #666;
-    }
-
-    /* Supprime l'effet hover sur mobile */
-    .continent:hover .overlay {
         opacity: 1;
     }
-
-    .continent:hover img {
-        transform: none;
-    }
-
-    .continent:hover {
-        transform: none;
+    .nav h1 {
+        font-size: 100%;
     }
 }

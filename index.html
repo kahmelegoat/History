@@ -1,74 +1,62 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>History of Countries</title>
-    <link rel="stylesheet" href="styles.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>History of Countries</title>
+	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation moderne sans header -->
-    <div class="nav">
-        <h1>History of Countries</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
+	<!-- Navigation moderne sans header -->
+	<div class="nav">
+		<h1>History of Countries</h1>
+		<nav>
+			<ul>
+				<li><a href="#about">About</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</div>
 
-    <!-- Section centrale avec des continents -->
-    <section class="continents" id="continents">
-        <div class="continent" data-continent="Afrique">
-            <a href="afrique.html">
-                <img src="images/Afrique.png" alt="Afrique">
-                <div class="overlay">
-                    <h2>Afrique</h2>
-                </div>
-            </a>
-        </div>
-        <div class="continent" data-continent="Asie">
-            <a href="asie.html">
-                <img src="images/Asia.png" alt="Asie">
-                <div class="overlay">
-                    <h2>Asie</h2>
-                </div>
-            </a>
-        </div>
-        <div class="continent" data-continent="Europe">
-            <a href="europe.html">
-                <img src="images/Europe.png" alt="Europe">
-                <div class="overlay">
-                    <h2>Europe</h2>
-                </div>
-            </a>
-        </div>
-        <div class="continent" data-continent="Amérique">
-            <a href="amerique.html">
-                <img src="images/Amérique_nord.png" alt="Amérique">
-                <div class="overlay">
-                    <h2>Amérique du nord</h2>
-                </div>
-            </a>
-        </div>
-        <div class="continent" data-continent="Océanie">
-            <a href="oceanie.html">
-                <img src="images/oceanie.png" alt="Océanie">
-                <div class="overlay">
-                    <h2>Océanie</h2>
-                </div>
-            </a>
-        </div>
-        <div class="continent" data-continent="Amérique du sud">
-            <a href="amerique_sud.html">
-                <img src="images/Amerique_sud.png" alt="Amérique du sud">
-                <div class="overlay">
-                    <h2>Amérique du sud</h2>
-                </div>
-            </a>
-        </div>
-    </section>
-    <script src="script.js"></script>
+	<!-- Section centrale avec des continents -->
+	<section class="continents">
+		<a href="afrique.html" class="continent" data-continent="Afrique">
+			<img src="images/Afrique.png" alt="Afrique">
+			<div class="overlay">
+				<h2>Afrique</h2>
+			</div>
+		</a>
+		<a href="asie.html" class="continent" data-continent="Asie">
+			<img src="images/Asia.png" alt="Asie">
+			<div class="overlay">
+				<h2>Asie</h2>
+			</div>
+		</a>
+		<a href="europe.html" alt="Europe" class="continent" data-continent="Europe">
+			<img src="images/Europe.png">
+			<div class="overlay">
+				<h2>Europe</h2>
+			</div>
+		</a>
+		<a href="amerique.html" alt="Amérique" class="continent" data-continent="Amérique">
+			<img src="images/Amérique_nord.png">
+			<div class="overlay">
+				<h2>Amérique du nord</h2>
+			</div>
+		</a>
+		<a href="oceanie.html" alt="Océanie" class="continent" data-continent="Océanie">
+			<img src="images/oceanie.png">
+			<div class="overlay">
+				<h2>Océanie</h2>
+			</div>
+		</a>
+		<a href="amerique_sud.html"alt="Amérique du sud" class="continent" data-continent="Amérique du sud">
+			<img src="images/Amerique_sud.png" >
+			<div class="overlay">
+				<h2>Amérique du sud</h2>
+			</div>
+		</a>
+	</section>
+	<script src="script.js"></script>
 </body>
 </html>

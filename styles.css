@@ -67,7 +67,7 @@ section {
     display: grid;
     justify-content: center;
     align-items: center;
-    grid-template-columns: repeat(auto-fill, 15rem);
+    grid-template-columns: repeat(3, 1fr); /* 3 colonnes */
     gap: 2rem;
     justify-items: center;
 }

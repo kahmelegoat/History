@@ -268,7 +268,7 @@ body {
         grid-template-columns: 1fr; /* 1 colonne pour les petits écrans */
         gap: 1.5rem;
     }
-    @media only screen and (max-width: 1196px) {
+    @media only screen and (max-width: 1195px) {
         .continents {
             grid-template-columns: 1fr; /* 1 colonne pour les petits écrans */
             gap: 1.5rem;

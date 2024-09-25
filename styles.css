@@ -265,8 +265,19 @@ body {
 /* Media query pour les écrans plus petits (mobile) */
 @media only screen and (max-width: 1196px) {
     .continents {
-        grid-template-columns: 1fr; /* 1 colonne pour mobile (vertical) */
-        gap: 1.5rem; /* Espace réduit entre les éléments */
+        grid-template-columns: 1fr; /* 1 colonne pour les petits écrans */
+        gap: 1.5rem;
+    }
+    @media only screen and (max-width: 1196px) {
+        .continents {
+            grid-template-columns: 1fr; /* 1 colonne pour les petits écrans */
+            gap: 1.5rem;
+        }
+    
+        .overlay {
+            opacity: 1; /* L'overlay est toujours visible sur mobile */
+            transition: none; /* Retire l'effet de transition sur mobile */
+        }
     }
 }
 

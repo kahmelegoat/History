@@ -78,8 +78,8 @@ section {
     flex-direction: column;
     overflow: hidden;
     border-radius: .5em; /* Bords légèrement arrondis */
-    width: 15rem; /* Proportions carrées/rectangulaires équilibrées */
-    height: 10rem; /* Hauteur réduite pour un aspect plus carré */
+    width: 30rem; /* Proportions carrées/rectangulaires équilibrées */
+    height: 19rem; /* Hauteur réduite pour un aspect plus carré */
     transition: transform 0.5s ease;
     position: relative;
     cursor: pointer;

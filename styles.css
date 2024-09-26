@@ -67,7 +67,7 @@ section {
     display: grid;
     justify-content: center;
     align-items: center;
-    grid-template-columns: repeat(auto-fill, 15rem);
+    grid-template-columns: repeat(3, 1fr); /* Fixed to 3 columns */
     gap: 1rem 1rem;
 }
 
@@ -84,6 +84,7 @@ section {
     position: relative;
     cursor: pointer;
     text-align: center;
+    margin: auto
 }
 
 .continent img {
@@ -144,4 +145,7 @@ section {
     .nav h1 {
         font-size: 100%;
     }
+    .continents {
+        grid-template-columns: repeat(auto-fill, 15rem); 
+    }  
 }

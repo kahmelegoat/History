@@ -21,12 +21,11 @@ header h1 {
     margin: 0;
     font-size: 2.8rem; /* Taille de police plus grande */
     font-weight: bold; /* Gras */
-    letter-spacing: 1px; /* Espacement des lettres */
 }
 
 /* Conteneur principal */
 .container {
-    width: 100%;
+    
     max-width: 1200px;
     margin: 20px auto;
     padding: 30px; /* Augmenter le padding */
@@ -117,4 +116,9 @@ a:hover {
     margin: 0 auto; /* Centre le conteneur sur la page */
     padding: 10px; /* Ajoute de l'espace autour du contenu */
 }
+@media screen and (max-width:  1195px) {
+    .container {
+        max-width: 2000px;
+    }
 
+}

@@ -100,7 +100,7 @@ h1 {
 /* Style particulier pour l'Égypte */
 .country[country="Égypte"] {
     border: 2px solid #000000; /* Bordure distinctive pour l'Égypte */
-    background-color: #eaf6ff; /* Fond léger pour l'Égypte */
+    background-color: #ffffff; /* Fond léger pour l'Égypte */
 }
 /* Style particulier pour le Maroc */
 .country[country="Maroc"] {

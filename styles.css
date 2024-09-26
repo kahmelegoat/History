@@ -78,8 +78,8 @@ section {
     flex-direction: column;
     overflow: hidden;
     border-radius: .5em; /* Bords légèrement arrondis */
-    width: 20rem; /* Proportions carrées/rectangulaires équilibrées */
-    height: 13rem; /* Hauteur réduite pour un aspect plus carré */
+    width: 25rem; /* Proportions carrées/rectangulaires équilibrées */
+    height: 16rem; /* Hauteur réduite pour un aspect plus carré */
     transition: transform 0.5s ease;
     position: relative;
     cursor: pointer;
@@ -146,6 +146,6 @@ section {
         font-size: 100%;
     }
     .continents {
-        grid-template-columns: repeat(auto-fill, 15rem); 
+        grid-template-columns: repeat(auto-fill, 50rem); 
     }  
 }

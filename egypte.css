@@ -3,14 +3,14 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4; /* Fond gris clair */
+    background-color: #e4e3e3; /* Fond gris clair */
     color: #333;
     line-height: 1.6;
 }
 
 /* En-tête */
 header {
-    background: #ffffff; /* En-tête blanc */
+    background: #e4e3e3; /* En-tête blanc */
     color: #333;
     padding: 20px 0; /* Augmenter le padding pour plus d'espace */
     text-align: center;
@@ -78,7 +78,7 @@ h3 {
 .references {
     margin-top: 40px;
     padding: 15px; /* Augmenter le padding */
-    background: #f9f9f9; /* Fond légèrement gris pour les références */
+    background: #ffffff; /* Fond légèrement gris pour les références */
     border-left: 5px solid #0077cc; /* Ligne à gauche */
 }
 

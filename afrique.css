@@ -29,19 +29,19 @@ h1 {
 
 /* Mise en page des pays */
 .countries {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fill, 15rem);
+    gap: 1rem 1rem;
 }
 
 /* Style pour chaque carte de pays */
 .country {
-    flex: 1 1 calc(33.333% - 20px);
-    max-width: calc(33.333% - 20px);
-    background-color: #f0f0f0; /* Changement de couleur de fond */
+    width: 15rem;
+    background: #ffffffcc; /* Changement de couleur de fond */
     border: 1px solid #ccc; /* Changement de la couleur de la bordure */
-    border-radius: 12px; /* Arrondir davantage les coins */
+    border-radius: 10px; /* Arrondir davantage les coins */
     overflow: hidden;
     text-align: center;
     transition: box-shadow 0.3s ease, transform 0.3s ease; /* Ajout de transform dans la transition */
@@ -51,7 +51,7 @@ h1 {
 
 .country img {
     width: 100%;
-    height: 180px;
+    max-height: 15rem;
     object-fit: cover;
     transition: transform 0.3s ease; /* Ajout de la transition pour l'image */
 }
@@ -113,12 +113,5 @@ h1 {
     .country {
         flex: 1 1 calc(50% - 20px);
         max-width: calc(50% - 20px);
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .country {
-        flex: 1 1 100%;
-        max-width: 100%;
     }
 }

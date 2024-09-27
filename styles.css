@@ -147,7 +147,7 @@ section {
     }
     .continents {
         grid-template-columns: repeat(auto-fill, 23rem); 
-      width: 20rem; /* Proportions carrées/rectangulaires équilibrées */
-      height: 43rem; /* Hauteur réduite pour un aspect plus carré */
+        width: 20rem; /* Proportions carrées/rectangulaires équilibrées */
+        height: 40rem; /* Hauteur réduite pour un aspect plus carré */
     }  
 }

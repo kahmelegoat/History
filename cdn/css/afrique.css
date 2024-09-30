@@ -107,6 +107,11 @@ h1 {
 	border: 2px solid #ff0000; /* Bordure distinctive pour l'Égypte */
 	background-color: #ffffff; /* Fond léger pour l'Égypte */
 }
+/* Style particulier pour l'Afrique du sud */
+.country[country="Afrique du Sud"] {
+	border: 2px solid #09ff00; /* Bordure distinctive pour l'Égypte */
+	background-color: #ffffff; /* Fond léger pour l'Égypte */
+}
 
 @media screen and (max-width:  1195px) {
 	.countries {

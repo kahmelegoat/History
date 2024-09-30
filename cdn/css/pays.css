@@ -1,0 +1,155 @@
+/* Style global */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Couleur de fond plus douce */
+    color: #333;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased; /* Améliore le rendu des polices sur certains navigateurs */
+}
+
+/* En-tête */
+header {
+    background-color: #f5f5f5; /* En-tête assorti au fond général */
+    color: #333;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 2px solid #ddd; /* Ligne de séparation plus douce */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3rem; /* Taille de police augmentée pour plus d'impact */
+    font-weight: bold;
+    text-transform: uppercase; /* Texte en majuscules pour plus de visibilité */
+    letter-spacing: 1px; /* Espacement des lettres pour une meilleure lisibilité */
+}
+
+/* Conteneur principal */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 40px; /* Augmentation du padding pour plus d'espace autour du contenu */
+    background: #ffffff;
+    border-radius: 16px; /* Coins plus arrondis pour un design moderne */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Ombre plus douce et subtile */
+    transition: box-shadow 0.3s; /* Transition de l'ombre pour un effet interactif */
+}
+
+.container:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); /* Effet d'ombre au survol pour attirer l'attention */
+}
+
+/* Sections */
+h2 {
+    color: #0077cc;
+    border-bottom: 3px solid #0077cc;
+    padding-bottom: 10px;
+    margin-top: 50px; /* Plus d'espace au-dessus des titres */
+    font-size: 2.2rem; /* Taille légèrement augmentée pour les titres */
+    text-transform: capitalize; /* Premier mot en majuscule pour un aspect élégant */
+}
+
+h3 {
+    margin-top: 35px; /* Plus d'espace au-dessus des sous-titres */
+    color: #666; /* Couleur légèrement plus douce */
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+/* Images */
+.main-image, .empire-image {
+    width: 100%;
+    max-width: 300px; /* Augmentation de la taille maximale des images */
+    height: auto;
+    border-radius: 12px; /* Arrondi plus prononcé des images */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition fluide pour l'effet de survol */
+    object-fit: contain;
+    margin-bottom: 30px;
+}
+
+.main-image:hover, .empire-image:hover {
+    transform: scale(1.05); /* Zoom légèrement plus marqué au survol */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Ombre augmentée au survol pour donner de la profondeur */
+}
+
+/* Références */
+.references {
+    margin-top: 50px;
+    padding: 20px; /* Plus d'espace dans le bloc de référence */
+    background: #f9f9f9; /* Fond plus doux pour contraster avec le contenu principal */
+    border-left: 5px solid #0077cc;
+    font-style: italic; /* Style italique pour le texte des références */
+}
+
+/* Sections */
+section {
+    margin-bottom: 60px; /* Espace plus important entre les sections */
+}
+
+/* Liste sans puces */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-left: 0; /* Supprime la marge gauche par défaut */
+}
+
+ul li::before {
+    content: "•"; /* Ajout d'un point comme puce pour plus de lisibilité */
+    color: #0077cc;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* Style des liens */
+a {
+    color: #0077cc;
+    text-decoration: none;
+    transition: color 0.3s, text-decoration 0.3s; /* Transition pour un effet plus doux */
+}
+
+a:hover {
+    color: #005999;
+    text-decoration: underline;
+}
+
+/* Médias pour les petits écrans */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.2rem; /* Réduction de la taille des titres sur mobile */
+    }
+
+    .container {
+        padding: 20px; /* Réduction du padding sur petits écrans */
+    }
+
+    h2 {
+        font-size: 1.8rem; /* Réduction des titres pour l'adaptabilité */
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    .main-image, .empire-image {
+        max-width: 100%; /* Les images occupent toute la largeur sur mobile */
+    }
+}
+
+/* Ajustement des éléments pour des écrans de taille moyenne */
+@media (max-width: 1195px) {
+    .container {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .main-image, .empire-image {
+        max-width: 280px;
+    }
+}

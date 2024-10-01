@@ -113,11 +113,11 @@ h1 {
 	background-color: #ffffff; /* Fond léger pour l'Égypte */
 }
 
+
 @media screen and (max-width:  1195px) {
 	.countries {
 		grid-template-columns: repeat(auto-fill, 15rem);
 		gap: 0.5rem 0.5rem;
 		width: 17.5rem;
-		height: 50rem; 
 	}
 }
